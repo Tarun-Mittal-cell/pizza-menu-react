@@ -74,7 +74,7 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our menu</h2>
-      {numPizzas && (
+      {numPizzas > 0 && (
         <ul className="pizzas">
           {pizzas.map((pizza) => (
             <Pizza pizzaObject={pizza} key={pizza.name} />
